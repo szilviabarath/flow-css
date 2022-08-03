@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*main classes*/
+
+.overflow-all {
+    overflow: scroll;
+    text-overflow: scroll;
+}
+
+.overflow-height {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-x {
+    overflow-x: scroll;
+}
+
+.overflow-y {
+    overflow-y: scroll;
+}
+
+
+.overflow-width {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/*secondary classes*/
+img {
+    display: block;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+.minmax {
+    grid-template-columns: minmax(1fr, 1fr);
+}
+
+.minwidth {
+    min-width: 10px;
+    height: auto;
+}
+
+.responsive-container {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.text-wrap {
+    word-wrap: wrap;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+
+
