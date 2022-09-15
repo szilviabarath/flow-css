@@ -1,19 +1,18 @@
 document.querySelectorAll('*').forEach(el => {
     if (el.offsetWidth > document.documentElement.offsetWidth) {
         el.style.border = '1px solid red';
-        console.log('Overflowing element:', el);
+        console.error('Overflowing element:', el);
     }
   });
 
-  var element = document.getElementById(`${name}`);
-  var out = "";
-  var name = window. prompt("Enter element name: ");
-  var elementStyle = element.style;
-  var computedStyle = window.getComputedStyle(element, null);
+  //fix overflow for viewport units//
+function handleFullWidthSizing(el) {
 
-  for (prop in elementStyle) {
-    if (elementStyle.hasOwnProperty(prop)) {
-      out += "  " + prop + " = '" + elementStyle[prop] + "' > '" + computedStyle[prop] + "'\n";
+    const scrollbarWidth = window.innerWidth - document.body.clientWidth
+    var els = document.querySelectorAll('*');
+    for(var i=0; i < els.length;i++) {
+        document.querySelector(el).style.width = `calc(100vw - ${scrollbarWidth}px)`
     }
-  }
-  console.log(out)
+}
+//replace Element with your element's name//
+handleFullWidthSizing("Element");

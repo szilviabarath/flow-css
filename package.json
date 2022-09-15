@@ -1,24 +1,17 @@
 {
-  "name": "@miniscott/flow",
+  "name": "flow-framework",
   "version": "1.0.0",
-  "description": "Flow is CSS framework that helps fixing common overflow issues. ",
-  "main": "style.css",
+  "description": "A CSS framework to solve overflow issues.",
+  "main": "overflow.js",
   "scripts": {
-    "test": "flow-npm"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/szilviabarath/Flow.git"
-  },
-  "keywords": [
-    "overflow",
-    "css"
-  ],
+  "keywords": ["overflow", "CSS"],
   "author": "Szilvia Szeréna Baráth",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/szilviabarath/Flow/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szilviabarath/flow-css"
   },
-  "homepage": "https://github.com/szilviabarath/Flow#readme"
+  "homepage": "https://github.com/szilviabarath/flow-css"
 }
-
